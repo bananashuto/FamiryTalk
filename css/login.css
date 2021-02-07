@@ -1,0 +1,71 @@
+
+#input-area{
+    text-align: center;
+    margin: 0 auto;
+}
+
+#login{
+    margin: 15px auto;
+    margin-top: 80px;
+    font-size: 13px;
+    display: block;
+    padding: 10px 40px;
+    color: #0345b6;
+    font-weight: bold;
+    background-color: #fff;
+    border: none;
+    border-radius: 30px;
+}
+
+#newuser{
+    margin: 15px auto;
+    font-size: 13px;
+    display: block;
+    padding: 10px 40px;
+    color: #0345b6;
+    font-weight: bold;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 30px;
+}
+
+
+#email{
+  border: none;
+  border-radius: 3px;
+  width: 200px;
+  font-size: 16px;
+  padding: 3px 40px;
+  background-color: #e9e9e9;
+}
+#password{
+    margin-top: 15px;
+    border: none;
+    border-radius: 3px;
+    width: 200px;
+    font-size: 16px;
+    padding: 3px 40px;
+    background-color: #e9e9e9;
+  }
+
+  .logoutbtn{
+    margin: 15px auto;
+    font-size: 13px;
+    display: block;
+    padding: 10px 35px;
+    color: #ffffff;
+    font-weight: bold;
+    background-color: #0345b6;
+    border: none;
+    border-radius: 30px;
+  }
+
+  #info{
+    color: #fff;
+    font-size: 13px;
+  }
+
+  .hide {
+    display: none;
+  }
+

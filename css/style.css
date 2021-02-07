@@ -1,0 +1,185 @@
+body {
+  background-color: #ffffff;
+  word-break: break-all;
+  width: 414px;
+  height: 896px;
+  margin: 0 auto;
+
+}
+main {
+  margin: 0 auto;
+  background-color: #F1F2F6;
+  padding-bottom: 20px;
+  min-height: 896px;
+}
+
+ h1{
+  font-size: 19px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: wrap;
+  background: linear-gradient(120deg, #036DB6, #034BB6);
+  color: #FFF;
+  width: 414px;
+  height: 60px;
+  box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.4);
+}
+.main-title>a{
+  text-decoration: none;
+  color: #ffffff;
+}
+
+
+section {
+  margin-top: 30px;
+}
+
+
+.top-title{
+  font-size: 26px;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 150px;
+}
+.top-subtitle{
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-size: 14px;
+}
+
+.top{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 414px;
+  height: 896px;
+  background: linear-gradient(120deg, #036DB6, #034BB6);
+
+}
+
+.top-contents{
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+
+/* ======
+ * キービジュアル
+ */
+
+.key-visual {
+  display: block;
+  width: 60%;
+  margin: 20px auto 0 auto;
+}
+
+/* =====
+ * 各ステップセクションごとの共通UI
+ */
+
+/* .step-inner {
+  width: 80%;
+  margin: 0 auto;
+} */
+
+section>h2 {
+  width: fit-content;
+  margin: 0 auto;
+  font-size: 20px;
+  border-bottom: 1px solid #2E2E2E;
+}
+
+
+
+/* ======
+ * フッター
+ */
+
+footer {
+  padding: 30px;
+  background-color: #dfdfdf
+}
+
+footer p {
+  text-align: center;
+  font-size: 14px;
+}
+
+
+
+
+/* .top-space {
+  margin-top: 20px;
+}
+.p-group {
+  padding-top: 1.2em;
+}
+.p-group>p.strong {
+  font-weight: bolder;
+} */
+
+
+
+
+/* =======
+ * TOKEN入力テキストとボタン
+ */
+
+ /* .diagnose-container {
+  width: 100%;
+  margin: 25px auto 0 auto;
+  justify-content: space-around;
+}
+
+.diagnose-container>.input-group {
+  display: flex;
+  justify-content: space-around;
+}
+
+.diagnose-container>.input-group>input {
+  width: 48%;
+  height: 2em;
+  margin: .4em 0;
+  padding: 3.2px;
+  border: 1px solid #2E2E2E;
+  border-radius: 12px;
+  font-size: 1.2em;
+  text-align: center;
+} */
+
+
+.recodeBox{
+  width: 92%;
+  height: 110px;
+  border: solid 0.5px #038cb6;
+  justify-content: center;
+  align-items: center;
+  flex-flow: wrap;
+  color: #262626;
+  border-radius: 10px 10px;
+  background-color: #fafafa;
+  /* background: linear-gradient(120deg, #038cb6, #034BB6); */
+  margin: 18px auto;
+  text-align: center;
+  box-shadow: 1px 3px 3px 1px rgba(0,0,0,0.06);
+}
+
+.ptag{
+  font-size: 14px;
+  color:#ffffff;
+  /* border-bottom: solid 1px #13AC67; */
+  background: linear-gradient(120deg, #038cb6, #034BB6);
+  border-radius: 8px 8px 0px 0px;
+}
+
+.recodeptag{
+  padding-top: 15px;
+  font-weight: bold;
+}
+
+.outputBox{
+
+  margin: 0 auto;
+}

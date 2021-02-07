@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="ja">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/btn.css">
+    <link rel="stylesheet" type="text/css" href="css/talk.css">
+    <link rel="stylesheet" type="text/css" href="css/result.css">
+    <title>familytalk</title>
+  </head>
+
+  <body>
+    <main>
+
+<!-------------------
+   タイトル
+  ------------------->
+      <h1 class="main-title">
+        <a href="index.html"><p >FAMILY TALK</p></a>
+      </h1>
+
+<!-------------------
+   録音した声の表示エリア
+  ------------------->
+      <section>        
+        <div>
+          <div class="rec-text-container">
+            <div class="title">会話記録</div>
+            <div class="content" id="rec_text">
+              <!-- ここにテキストが入る -->
+            </div>
+          </div>
+        </div>
+      </section>
+
+<!-------------------
+  録音 & 測定ボタン
+  ------------------->
+      
+      <section class="btn"> 
+        <!-- 録音 -->
+        <div class="rec-bt-container ">
+          <button id="rec_bt" class="rec-bt">
+            <span><p id="rec_state_text">default</p></span>
+          </button>
+        </div>
+        <!-- 測定 -->
+        <div class="step-inner">
+            <button id="diagnose_bt" class="strong-bt">測定する</button>
+        </div>
+      </section>
+        <!-- ※注意 -->
+      <p id="diag_caution" class="after-materialize caution">
+        ※会話が存在しないため診断を行えません。</p>
+
+
+<!-------------------
+        結果
+  ------------------->
+
+      <section>
+        <h2>
+          結果
+        </h2>
+
+        <div class="result-container">
+          <!-- デフォルト -->
+          <div class="box">
+            <p id="result_default">診断後、ここに結果が表示されます</p>
+          </div>
+
+          <!-- フィードバック -->
+          <div id="result_response" class="result exit-erase">
+            <!-- 画像
+            <img id="result_img" src="#"> -->
+
+            <!-- コメント -->
+            <div class="comment-box1">
+              <p id="result_category" class="category">category:default</p>
+              <p id="result_advice" class="advise">advise:default</p>
+            </div>
+
+            <div class="comment-box2">
+              <h3 class="resultTile">会話時間</h3>
+              <div class="Passege">
+                <p id="PassageArea" ></p>
+              </div>
+            </div>
+
+            <div class="comment-box2">
+              <h3 class="resultTile">会話比率</h3>
+              <div class="ratio">
+                  <p id="leftRatio" class="ratio">-%</p>
+                  <p id="rightRatio" class="ratio">-%</p>
+              </div>
+            </div>
+            <canvas id="myPieChart"></canvas>
+
+            <div class="comment-box2">
+             <h3 class="resultTile">感情にまつわる単語</h3>
+             <div class="phrase">
+              <p id="result_phrase" >phrase:default</p>
+            </div>
+            </div>
+            
+            <!-- <div class="comment-box2">
+              <p id="result_point" class="point">point:0.0点</p>
+            </div> -->
+
+
+          </div>
+        </div>
+
+        <div class="again-btn">
+          <button id="one_more_game_bt" class="strong-bt2">もう一度話す</button>
+        </div>
+        <div class="again-btn">
+          <button id="recode" class="strong-bt2">記録する</button>
+        </div>
+        <div class="again-btn">
+          <a href="recode.html"><button  class="strong-bt2">記録をみる</button></a>
+        </div>
+ 
+      </section> 
+
+
+
+    </main>
+
+    <!-- 棒グラフテスト -->
+    <!-- <canvas id="stage"></canvas> -->
+
+
+
+<!-------------------
+   フッター
+  ------------------->
+    <footer>
+      <div class="p-group">
+        <!-- <p>© 2020  All Rights Reserved</p> -->
+      </div>
+    </footer>
+    </div>
+  
+
+  </div>
+</div>
+
+
+    
+
+<!-------------------
+   JavaScript
+  ------------------->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    
+    <script type="text/javascript" src="js/rec.js"></script>
+    <script type="text/javascript" src="js/time.js"></script>
+    <script type="text/javascript" src="js/key.js"></script>
+    <!-- firebase -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.2/firebase.js"></script>
+    <script type="text/javascript" src="js/firebase.js"></script>
+    <!-- Chart.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.4/Chart.min.js"></script>
+    <script type="text/javascript" src="js/chart.js"></script>
+    
+    <script type="text/javascript" src="js/index.js"></script>
+    <!-- ログイン -->
+    <script type="text/javascript" src="js/login.js"></script>
+    <!--firebase UIの読み込み-->
+    <script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
+    <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css" />
+
+    
+    
+  </body>
+
+</html>
